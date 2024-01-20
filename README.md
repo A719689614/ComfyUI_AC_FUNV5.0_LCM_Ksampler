@@ -1,5 +1,10 @@
 # ComfyUI_AC_FUNV5.0
 给comfyui提供一个默认LCM的专用功能
+# 更新日志2024/1/20
+更新了stable diffusion clip解码器和一些其他功能
+![AC_FUNv5](https://github.com/A719689614/ComfyUI_AC_FUNV5.0_LCM_Ksampler/assets/142242136/9d2dcc64-52eb-445b-a8ca-10d12dca5d14)
+
+
 # 一、功能介绍
 主要是给采样器设定了默认的LCM参数，以及快捷键调用
 直接输入AC不分大小写
