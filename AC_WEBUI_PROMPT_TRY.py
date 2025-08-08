@@ -51,14 +51,13 @@ class AC_WEBUI_Prompt:
         return {"required": {"text": ("STRING", {"multiline": True}), "clip": ("CLIP", ),
                               "cur_step": ("INT", {"default": 0, "min": 0, "max": 10000}),
                                 "steps": ("INT", {"default": 5, "min": 1, "max": 10000}),
-                                "tips": ("STRING", {"default":"WEBUI_Prompt测试版By—AC_FUN","multiline": False}),
                                 }}
     RETURN_TYPES = ("CONDITIONING", )
     FUNCTION = "encode"
 
     CATEGORY = ac_category()
 
-    def encode(self, clip, text, cur_step, steps,tips=None):
+    def encode(self, clip, text, cur_step, steps):
         tokens = clip.tokenize(prompt_expander(text,cur_step,steps))
         cond, pooled = clip.encode_from_tokens(tokens, return_pooled=True)
         return ([[cond, {"pooled_output": pooled}]],)
