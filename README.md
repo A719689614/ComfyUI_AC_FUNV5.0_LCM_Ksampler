@@ -1,5 +1,7 @@
 # ComfyUI_AC_FUNV5.0
 给comfyui提供一个默认LCM的专用功能
+# 更新日志2025-08-08
+修复插件已知BUG，去除所有冗余图标
 # 更新日志2024/1/20
 更新了stable diffusion clip解码器和一些其他功能
 ![AC_FUNv5](https://github.com/A719689614/ComfyUI_AC_FUNV5.0_LCM_Ksampler/assets/142242136/9d2dcc64-52eb-445b-a8ca-10d12dca5d14)
